@@ -13,6 +13,9 @@
 		DF23BD3027014C2300AE35DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF23BD2E27014C2300AE35DD /* Main.storyboard */; };
 		DF23BD3227014C2500AE35DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF23BD3127014C2500AE35DD /* Assets.xcassets */; };
 		DF23BD3527014C2500AE35DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF23BD3327014C2500AE35DD /* LaunchScreen.storyboard */; };
+		DF23BD4027014D2200AE35DD /* FirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF23BD3F27014D2200AE35DD /* FirstCollectionViewCell.swift */; };
+		DF23BD44270150D900AE35DD /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF23BD43270150D900AE35DD /* DataModel.swift */; };
+		DF23BD462701513800AE35DD /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF23BD452701513800AE35DD /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		DF23BD3127014C2500AE35DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF23BD3427014C2500AE35DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF23BD3627014C2500AE35DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF23BD3F27014D2200AE35DD /* FirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF23BD43270150D900AE35DD /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		DF23BD452701513800AE35DD /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		DF23BD2727014C2300AE35DD /* MVCArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				DF23BD4227014DA300AE35DD /* Data */,
+				DF23BD3D27014CD800AE35DD /* Model */,
+				DF23BD3E27014CE000AE35DD /* Controller */,
+				DF23BD4127014D3600AE35DD /* View */,
+				DF23BD3C27014CCB00AE35DD /* Story board */,
 				DF23BD2827014C2300AE35DD /* AppDelegate.swift */,
 				DF23BD2A27014C2300AE35DD /* SceneDelegate.swift */,
-				DF23BD2C27014C2300AE35DD /* ViewController.swift */,
-				DF23BD2E27014C2300AE35DD /* Main.storyboard */,
 				DF23BD3127014C2500AE35DD /* Assets.xcassets */,
-				DF23BD3327014C2500AE35DD /* LaunchScreen.storyboard */,
 				DF23BD3627014C2500AE35DD /* Info.plist */,
 			);
 			path = MVCArchitecture;
+			sourceTree = "<group>";
+		};
+		DF23BD3C27014CCB00AE35DD /* Story board */ = {
+			isa = PBXGroup;
+			children = (
+				DF23BD2E27014C2300AE35DD /* Main.storyboard */,
+				DF23BD3327014C2500AE35DD /* LaunchScreen.storyboard */,
+			);
+			path = "Story board";
+			sourceTree = "<group>";
+		};
+		DF23BD3D27014CD800AE35DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF23BD43270150D900AE35DD /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF23BD3E27014CE000AE35DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DF23BD2C27014C2300AE35DD /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DF23BD4127014D3600AE35DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF23BD3F27014D2200AE35DD /* FirstCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF23BD4227014DA300AE35DD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DF23BD452701513800AE35DD /* Data.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF23BD44270150D900AE35DD /* DataModel.swift in Sources */,
+				DF23BD462701513800AE35DD /* Data.swift in Sources */,
 				DF23BD2D27014C2300AE35DD /* ViewController.swift in Sources */,
 				DF23BD2927014C2300AE35DD /* AppDelegate.swift in Sources */,
 				DF23BD2B27014C2300AE35DD /* SceneDelegate.swift in Sources */,
+				DF23BD4027014D2200AE35DD /* FirstCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
